@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <Header />
       <section className="h-screen bg-gray-100 flex flex-col items-center justify-center">
-        <h1 className="text-5xl font-bold mb-4">Welcome to Our Startup</h1>
+        <h1 className="text-5xl font-bold mb-4">Welcome to  Startup</h1>
         <p className="text-xl text-gray-600 mb-8">
           We help you achieve your goals with our amazing services.
         </p>
