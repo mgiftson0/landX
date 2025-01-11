@@ -12,7 +12,7 @@ const Hero = () => {
       distance: '50px',
       duration: 1000,
       delay: 200,
-      reset: true, // Set to true if you want the animation to repeat on scroll
+      reset: true, 
     });
 
     sr.reveal('.hero-image', {
@@ -20,15 +20,15 @@ const Hero = () => {
       distance: '50px',
       duration: 1000,
       delay: 200,
-      reset: true, // Set to true if you want the animation to repeat on scroll
+      reset: true, 
     });
 
     sr.reveal('.hero-buttons', {
       origin: 'bottom',
       distance: '20px',
       duration: 1000,
-      delay: 400, // Longer delay to make buttons appear last
-      reset: true, // Set to true if you want the animation to repeat on scroll
+      delay: 400, 
+      reset: true, 
     });
   }, []);
 
