@@ -60,7 +60,7 @@ const Card2 = () => {
             </p>
             <div className="flex justify-center">
               <button className="card2-button w-32 px-4 py-2 border-2 border-black text-black bg-transparent rounded-lg hover:bg-black hover:text-white transition-colors">
-                learn more
+                try now
               </button>
             </div>
           </div>
