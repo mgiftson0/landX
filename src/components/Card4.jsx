@@ -1,6 +1,29 @@
+import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 import Card1Image from '../assets/Card1Image.png';
 
 const Card4 = () => {
+  useEffect(() => {
+    const sr = ScrollReveal();
+
+    sr.reveal('.card4-left', {
+      origin: 'left',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      reset: true,
+    });
+
+    sr.reveal('.card4-step', {
+      origin: 'right',
+      distance: '50px',
+      duration: 1000,
+      delay: 400,
+      interval: 200, // Stagger the reveal of each step
+      reset: true,
+    });
+  }, []);
+
   return (
     <section className="py-16 bg-transparent">
       <div className="relative flex justify-center items-center">
@@ -16,7 +39,7 @@ const Card4 = () => {
           style={{ zIndex: 1 }}
         >
           {/* Left Section */}
-          <div className="w-3/5 flex flex-col items-start pr-8">
+          <div className="card4-left w-3/5 flex flex-col items-start pr-8">
             <div className="relative -mt-32 w-full">
               <img
                 src={Card1Image}
@@ -39,22 +62,28 @@ const Card4 = () => {
 
           {/* Right Section */}
           <div className="w-2/5 pl-8">
-            <h2 className="text-xl font-bold text-gray-800 mb-4">Step 1</h2>
-            <p className="text-gray-600 text-m mb-8">
-              reach out to one of our specialists and have a short introduction session.
-            </p>
-            {/* Divider Line */}
-            <div className="border-t-2 border-gray-300 h-0 mb-8"></div>
-            <h2 className="text-xl font-bold text-gray-800 mb-4">Step 2</h2>
-            <p className="text-gray-600 text-m mb-8">
-              work with our team to identify the areas where we can help you optimize your workflow.
-            </p>
-            {/* Divider Line */}
-            <div className="border-t-2 border-gray-300 h-0 mb-8"></div>
-            <h2 className="text-xl font-bold text-gray-800 mb-4">Step 3</h2>
-            <p className="text-gray-600 text-m">
-              implement the recommended solutions and start seeing results immediately.
-            </p>
+            <div className="card4-step">
+              <h2 className="text-xl font-bold text-gray-800 mb-4">Step 1</h2>
+              <p className="text-gray-600 text-m mb-8">
+                reach out to one of our specialists and have a short introduction session.
+              </p>
+              {/* Divider Line */}
+              <div className="border-t-2 border-gray-300 h-0 mb-8"></div>
+            </div>
+            <div className="card4-step">
+              <h2 className="text-xl font-bold text-gray-800 mb-4">Step 2</h2>
+              <p className="text-gray-600 text-m mb-8">
+                work with our team to identify the areas where we can help you optimize your workflow.
+              </p>
+              {/* Divider Line */}
+              <div className="border-t-2 border-gray-300 h-0 mb-8"></div>
+            </div>
+            <div className="card4-step">
+              <h2 className="text-xl font-bold text-gray-800 mb-4">Step 3</h2>
+              <p className="text-gray-600 text-m">
+                implement the recommended solutions and start seeing results immediately.
+              </p>
+            </div>
           </div>
         </div>
       </div>
