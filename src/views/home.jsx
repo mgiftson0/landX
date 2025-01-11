@@ -7,7 +7,9 @@ const Home = () => {
     <div className="bg-gray-100">
       <Header />
       <Hero />
-      <Card1 />
+      <div className="mt-10"> {/* Added margin top to Card1 */}
+        <Card1 />
+      </div>
     </div>
   );
 };

@@ -7,19 +7,33 @@ const Card1 = () => {
             className="absolute w-[900px] min-h-[400px] rounded-2xl border-b-4 border-gray-300 opacity-50 shadow-lg"
             style={{ zIndex: 0 }}
           ></div>
-          
+  
           {/* Top Card */}
           <div
-            className="relative w-[1000px] min-h-[360px] bg-white rounded-2xl shadow-xl flex flex-col items-center justify-center"
+            className="relative w-[1000px] min-h-[360px] bg-white rounded-2xl shadow-xl flex items-center p-8"
             style={{ zIndex: 1 }}
           >
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Stacked Card</h2>
-            <p className="text-gray-600 text-center px-8">
-              This is a stacked card component. The card's height will automatically adjust as content grows.
-            </p>
-            <p className="text-gray-600 text-center px-8 mt-4">
-              Add as much text or content as you want, and the card will expand to accommodate it.
-            </p>
+            {/* Left Section */}
+            <div className="flex-1">
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                introduction <br/> good solutions
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Join our community and experience <br/> the amazing benefits today.
+              </p>
+              <button className="mt-6 px-5 py-2.5 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+                try for free
+              </button>
+            </div>
+  
+            {/* Right Section with Image */}
+            <div className="flex-shrink-0 ml-8">
+              <img
+                src="https://via.placeholder.com/250" // Replace with the actual image source
+                alt="Community"
+                className="w-64 h-auto object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>
