@@ -1,40 +1,46 @@
-import reactLogo from '../assets/Image.jpeg';
+import heroImage from '../assets/heroImage.png';
+import Sponsors from './Sponsors';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-gray-100 flex flex-col lg:flex-row items-center justify-between px-4 py-10 space-y-8 lg:space-y-0 sm:px-6 lg:px-20 sm:py-20 lg:py-0">
-      {/* Left side - Text Content */}
-      <div className="w-full lg:w-1/2 lg:pr-10 text-center lg:text-left">
-        <div className="mb-4">
-          <span className="inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-xs font-semibold">
-            30 Days Free Trial
-          </span>
+    <>
+      <section className="min-h-screen bg-gray-100 flex flex-col lg:flex-row items-center justify-between px-4 py-10 space-y-8 lg:space-y-0 sm:px-6 lg:px-20 sm:py-20 lg:py-0">
+        {/* Left side - Text Content */}
+        <div className="w-full lg:w-1/2 lg:pr-10 text-center lg:text-left">
+          <div className="mb-4">
+            <span className="inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-xs font-semibold">
+              30 Days Free Trial
+            </span>
+          </div>
+          <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-4 lg:mb-6">
+            The best way to showcase your project
+          </h1>
+          <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 lg:mb-8 max-w-md sm:max-w-xl mx-auto lg:mx-0">
+            We help you achieve your goals with our amazing services.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center lg:justify-start">
+            <button className="sm:w-auto px-4 sm:px-5 py-2 sm:py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+              Start Now
+            </button>
+            <button className="sm:w-auto px-4 sm:px-5 py-2 sm:py-3 border-2 border-blue-500 text-blue-500 rounded-lg hover:bg-blue-50 transition-colors">
+              See How It Works
+            </button>
+          </div>
         </div>
-        <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-4 lg:mb-6">
-          The best way to showcase your project
-        </h1>
-        <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 lg:mb-8 max-w-md sm:max-w-xl mx-auto lg:mx-0">
-          We help you achieve your goals with our amazing services.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center lg:justify-start">
-          <button className="sm:w-auto px-4 sm:px-5 py-2 sm:py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
-            Start Now
-          </button>
-          <button className="sm:w-auto px-4 sm:px-5 py-2 sm:py-3 border-2 border-blue-500 text-blue-500 rounded-lg hover:bg-blue-50 transition-colors">
-            See How It Works
-          </button>
-        </div>
-      </div>
 
-      {/* Right side - Image */}
-      <div className="w-full lg:w-1/2 px-4 sm:px-6 lg:px-0">
-        <img
-          src={reactLogo}
-          alt="Project Showcase"
-          className="w-full h-auto rounded-lg shadow-md sm:shadow-lg max-w-xs sm:max-w-md lg:max-w-2xl mx-auto"
-        />
-      </div>
-    </section>
+        {/* Right side - Image */}
+        <div className="w-full lg:w-1/2 px-4 sm:px-6 lg:px-0">
+          <img
+            src={heroImage}
+            alt="Project Showcase"
+            className="w-full h-auto rounded-lg mx-auto"
+          />
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <Sponsors />
+    </>
   );
 };
 
