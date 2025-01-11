@@ -49,11 +49,11 @@ const Hero = () => {
             we help you achieve your goals with our amazing services.
           </p>
           <div className="hero-buttons flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center lg:justify-start">
-            <button className="sm:w-auto px-4 sm:px-5 py-2 sm:py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
-              Start Now
+            <button className="sm:w-auto px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+              try for free
             </button>
-            <button className="sm:w-auto px-4 sm:px-5 py-2 sm:py-3 border-2 border-blue-500 text-blue-500 rounded-lg hover:bg-blue-50 transition-colors">
-              See How It Works
+            <button className="sm:w-auto px-3 sm:px-4 py-1.5 sm:py-2 border-2 border-blue-500 text-blue-500 rounded-lg hover:bg-blue-50 transition-colors">
+              see how it works
             </button>
           </div>
         </div>

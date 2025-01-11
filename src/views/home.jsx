@@ -1,7 +1,7 @@
 import Hero from "../components/Hero";
 import Header from "../components/Header";
 import Card1 from "../components/Card1";
-import Card3 from "../components/Card3";
+import Card2 from "../components/Card2";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
         <Card1 />
       </div>
       <div className="mt-10"> 
-        <Card3 />
+        <Card2 />
       </div>
     </div>
   );
