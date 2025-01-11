@@ -1,12 +1,42 @@
+import { useEffect } from 'react';
 import heroImage from '../assets/heroImage.png';
 import Sponsors from './Sponsors';
+import ScrollReveal from 'scrollreveal';
 
 const Hero = () => {
+  useEffect(() => {
+    const sr = ScrollReveal();
+
+    sr.reveal('.hero-text', {
+      origin: 'left',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      reset: true, // Set to true if you want the animation to repeat on scroll
+    });
+
+    sr.reveal('.hero-image', {
+      origin: 'right',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      reset: true, // Set to true if you want the animation to repeat on scroll
+    });
+
+    sr.reveal('.hero-buttons', {
+      origin: 'bottom',
+      distance: '20px',
+      duration: 1000,
+      delay: 400, // Longer delay to make buttons appear last
+      reset: true, // Set to true if you want the animation to repeat on scroll
+    });
+  }, []);
+
   return (
     <>
-      <section className="min-h-screen bg-gray-100 flex flex-col lg:flex-row items-center justify-between px-4 py-10 space-y-8 lg:space-y-0 sm:px-6 lg:px-20 sm:py-20 lg:py-0">
+      <section className="hero-section min-h-screen bg-gray-100 flex flex-col lg:flex-row items-center justify-between px-4 py-10 space-y-8 lg:space-y-0 sm:px-6 lg:px-20 sm:py-20 lg:py-0">
         {/* Left side - Text Content */}
-        <div className="w-full lg:w-1/2 lg:pr-10 text-center lg:text-left">
+        <div className="hero-text w-full lg:w-1/2 lg:pr-10 text-center lg:text-left">
           <div className="mb-4">
             <span className="inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-xs font-semibold">
               30 Days Free Trial
@@ -18,7 +48,7 @@ const Hero = () => {
           <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 lg:mb-8 max-w-md sm:max-w-xl mx-auto lg:mx-0">
             We help you achieve your goals with our amazing services.
           </p>
-          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center lg:justify-start">
+          <div className="hero-buttons flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center lg:justify-start">
             <button className="sm:w-auto px-4 sm:px-5 py-2 sm:py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
               Start Now
             </button>
@@ -29,7 +59,7 @@ const Hero = () => {
         </div>
 
         {/* Right side - Image */}
-        <div className="w-full lg:w-1/2 px-4 sm:px-6 lg:px-0">
+        <div className="hero-image w-full lg:w-1/2 px-4 sm:px-6 lg:px-0">
           <img
             src={heroImage}
             alt="Project Showcase"
