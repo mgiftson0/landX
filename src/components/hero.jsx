@@ -43,10 +43,10 @@ const Hero = () => {
             </span>
           </div>
           <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-4 lg:mb-6">
-            The best way to showcase your project
+            the best way to showcase your project
           </h1>
           <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 lg:mb-8 max-w-md sm:max-w-xl mx-auto lg:mx-0">
-            We help you achieve your goals with our amazing services.
+            we help you achieve your goals with our amazing services.
           </p>
           <div className="hero-buttons flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center lg:justify-start">
             <button className="sm:w-auto px-4 sm:px-5 py-2 sm:py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">

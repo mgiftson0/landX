@@ -15,7 +15,7 @@ const Header = () => {
       <div className="flex items-center flex-1">
         {/* Logo */}
         <div className="text-2xl font-bold text-black ml-4 sm:ml-12 lg:ml-24">
-          <Link to="/" className="text-black">LandX</Link>
+          <Link to="/" className="text-black">landX</Link>
         </div>
 
         {/* Hamburger Icon for Mobile */}
