@@ -42,11 +42,6 @@ const Card5 = () => {
   return (
     <section className="card5-section py-10 bg-gray-100">
       <div className="relative flex justify-center items-center">
-        {/* Hidden Bottom Card without Shadow */}
-        <div
-          className="absolute w-[1000px] min-h-[500px] rounded-2xl border-b-4 border-gray-300 opacity-50"
-          style={{ zIndex: 0 }}
-        ></div>
         
         {/* Top Card */}
         <div
