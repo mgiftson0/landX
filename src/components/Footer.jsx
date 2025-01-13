@@ -1,7 +1,21 @@
+import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 const Footer = () => {
+  useEffect(() => {
+    const sr = ScrollReveal();
+
+    sr.reveal('.footer-section', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      reset: true,
+    });
+  }, []);
+
   return (
-    <footer className="text-black py-12 bg-transparent border-t border-gray-200">
+    <footer className="footer-section text-black py-12 bg-transparent border-t border-gray-200">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Company Description */}
@@ -73,7 +87,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="mt-12 pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
-            <p>© {new Date().getFullYear()} landX. Created by <a href="#" className="text-blue-500 hover:underline">[Your Name]</a>. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} landX. Created by <a href="#" className="text-blue-500 hover:underline">manuel</a>. All rights reserved.</p>
             <p className="mt-4 md:mt-0">English (Global)</p>
           </div>
         </div>
