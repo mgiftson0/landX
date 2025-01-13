@@ -5,6 +5,8 @@ import Card2 from "../components/Card2";
 import Card3 from "../components/Card3";
 import Card4 from "../components/Card4";
 import Testimonials from "../components/Testimonials";
+import Card5 from "../components/Card5";
+
 
 
 const Home = () => {
@@ -25,6 +27,9 @@ const Home = () => {
       </div>
       <div className="mt-10"> 
         <Testimonials />
+      </div>
+      <div className="mt-10"> 
+        <Card5/>
       </div>
       </div>
     </div>

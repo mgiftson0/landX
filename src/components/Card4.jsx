@@ -19,7 +19,7 @@ const Card4 = () => {
       distance: '50px',
       duration: 1000,
       delay: 400,
-      interval: 200, // Stagger the reveal of each step
+      interval: 200, 
       reset: true,
     });
   }, []);
