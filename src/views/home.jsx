@@ -6,7 +6,7 @@ import Card3 from "../components/Card3";
 import Card4 from "../components/Card4";
 import Testimonials from "../components/Testimonials";
 import Card5 from "../components/Card5";
-
+import Footer from "../components/Footer";
 
 
 const Home = () => {
@@ -30,6 +30,9 @@ const Home = () => {
       </div>
       <div className="mt-10"> 
         <Card5/>
+      </div>
+      <div className="mt-10"> 
+        <Footer/>
       </div>
       </div>
     </div>
