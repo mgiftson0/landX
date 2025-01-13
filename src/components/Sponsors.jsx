@@ -9,8 +9,8 @@ const Sponsors = () => {
       origin: 'bottom',
       distance: '20px',
       duration: 1000,
-      delay: 600, // Longer delay to ensure it appears after the buttons
-      reset: true, // Set to true if you want the animation to repeat on scroll
+      delay: 600, 
+      reset: true, 
     });
   }, []);
 
