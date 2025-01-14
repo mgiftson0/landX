@@ -1,3 +1,7 @@
+# Start of Selection
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.bg-gray-100 {
+  background-color: #f8f9fa; /* Tailwind's gray-100 color */
+}
