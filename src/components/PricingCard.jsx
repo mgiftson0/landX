@@ -1,9 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 const PricingCard = () => {
+  useEffect(() => {
+    const sr = ScrollReveal();
+
+    sr.reveal('.pricing-card', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      interval: 200,
+      reset: true,
+    });
+
+    sr.reveal('.pricing-header', {
+      origin: 'top',
+      distance: '50px',
+      duration: 1000,
+      delay: 100,
+      reset: true,
+    });
+  }, []);
+
   return (
     <div className="flex flex-col items-center text-center p-6">
-      <h2 className="text-3xl font-bold mb-4 mt-16">Pricing</h2>
+      <h2 className="pricing-header text-3xl font-bold mb-4 mt-16">Pricing</h2>
       <p className="mb-12">
         Our pricing is not expensive, but it&apos;s not cheap either,
         <br /> it&apos;s exactly what it should be.
@@ -11,7 +33,7 @@ const PricingCard = () => {
       
       <div className="flex flex-col md:flex-row gap-8 items-center md:items-stretch">
         {/* Basic Plan */}
-        <div className="bg-white p-8 rounded-lg shadow-md h-[320px] w-[260px] flex flex-col justify-between">
+        <div className="pricing-card bg-white p-8 rounded-lg shadow-md h-[320px] w-[260px] flex flex-col justify-between">
           <div>
             <h3 className="text-sm font-semibold uppercase text-gray-600 text-left">
               Basic
@@ -32,7 +54,7 @@ const PricingCard = () => {
         </div>
 
         {/* Pro Plan */}
-        <div className="bg-white p-8 rounded-lg shadow-xl h-[360px] w-[280px] flex flex-col justify-between -mt-5 relative z-10">
+        <div className="pricing-card bg-white p-8 rounded-lg shadow-xl h-[360px] w-[280px] flex flex-col justify-between -mt-5 relative z-10">
           <div>
             <h3 className="text-sm font-semibold uppercase text-gray-600 text-left">
               Pro
@@ -56,7 +78,7 @@ const PricingCard = () => {
         </div>
 
         {/* Business Plan */}
-        <div className="bg-white p-8 rounded-lg shadow-md h-[320px] w-[260px] flex flex-col justify-between">
+        <div className="pricing-card bg-white p-8 rounded-lg shadow-md h-[320px] w-[260px] flex flex-col justify-between">
           <div>
             <h3 className="text-sm font-semibold uppercase text-gray-600 text-left">
               Business
@@ -71,7 +93,7 @@ const PricingCard = () => {
               </p>
             </div>
           </div>
-          <button className="w-full border  py-2 rounded-lg hover:bg-blue-100 transition duration-300">
+          <button className="w-full border py-2 rounded-lg hover:bg-blue-100 transition duration-300">
             Get Started with Business
           </button>
         </div>
