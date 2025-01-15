@@ -1,9 +1,14 @@
 import Header from '../components/Header'; 
+import About from '../components/About';
+
+
+
+
 const AboutUs = () => {
   return (
     <div className="bg-gray-100">
       <Header />
-      {/* Additional content can be added here if needed */}
+      <About />
     </div>
   );
 };
