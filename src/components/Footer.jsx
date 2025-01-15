@@ -36,7 +36,7 @@ const Footer = () => {
               <a href="#" className="text-gray-600 hover:text-black transition-colors duration-200">
                 Features
               </a>
-              <a href="#" className="text-gray-600 hover:text-black transition-colors duration-200">
+              <a href="/pricing" className="text-gray-600 hover:text-black transition-colors duration-200">
                 Pricing
               </a>
               <a href="#" className="text-gray-600 hover:text-black transition-colors duration-200">

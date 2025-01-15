@@ -1,8 +1,8 @@
-// import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './views/Home';
 import Pricing from './views/Pricing';
-// Import other views as needed
+import AboutUs from './views/AboutUs'; 
+
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pricing" element={<Pricing />} />
-        {/* Add other routes here */}
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
     </Router>
   );
