@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import PricingCard from '../components/PricingCard';
 import Features from '../components/Features';
+import Questions from '../components/Questions';
 
 const Pricing = () => {
   return (
@@ -9,6 +10,7 @@ const Pricing = () => {
       <main className="mt-16">
         <PricingCard />
         <Features />
+        <Questions />
       </main>
     </div>
   );

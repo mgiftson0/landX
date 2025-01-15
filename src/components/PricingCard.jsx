@@ -25,7 +25,7 @@ const PricingCard = () => {
 
   return (
     <div className="flex flex-col items-center text-center p-6">
-      <h2 className="pricing-header text-3xl font-bold mb-4 mt-16">Pricing</h2>
+      <h2 className="pricing-header text-3xl font-bold mb-4 mt-24">Pricing</h2>
       <p className="mb-12">
         Our pricing is not expensive, but it&apos;s not cheap either,
         <br /> it&apos;s exactly what it should be.
