@@ -2,6 +2,8 @@ import Header from '../components/Header';
 import PricingCard from '../components/PricingCard';
 import Features from '../components/Features';
 import Questions from '../components/Questions';
+import Card5 from '../components/Card5';
+import Footer from '../components/Footer';
 
 const Pricing = () => {
   return (
@@ -11,6 +13,10 @@ const Pricing = () => {
         <PricingCard />
         <Features />
         <Questions />
+        <Card5 />
+        <br/>
+        <br/>
+        <Footer />
       </main>
     </div>
   );
