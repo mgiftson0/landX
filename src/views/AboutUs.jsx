@@ -1,6 +1,8 @@
 import Header from '../components/Header'; 
 import About from '../components/About';
 import Mission from '../components/Mission';
+import Team from '../components/Team';
+
 
 
 
@@ -11,6 +13,7 @@ const AboutUs = () => {
       <Header />
       <About />
       <Mission />
+      <Team />
     </div>
   ); 
 };
