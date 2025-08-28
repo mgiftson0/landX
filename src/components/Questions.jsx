@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
-import faqImage from '../assets/faqImage.png'; 
+import FAQImage from '../assets/FAQImage.png'; 
 
 const Questions = () => {
   const [openQuestion, setOpenQuestion] = useState(null);
@@ -59,7 +59,7 @@ const Questions = () => {
   return (
     <section className="py-12">
       <div className="container mx-auto px-4 text-center">
-        <img src={faqImage} alt="FAQ" className="faq-image w-1/4 md:w-1/5 mx-auto mb-8" />
+        <img src={FAQImage} alt="FAQ" className="faq-image w-1/4 md:w-1/5 mx-auto mb-8" />
         <h2 className="faq-header text-2xl font-bold mb-6">frequently asked <br/> questions</h2>
         <div className="w-full md:w-1/3 mx-auto">
           {questions.map((question, index) => (
