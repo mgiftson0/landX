@@ -75,39 +75,39 @@ const Team = () => {
   }, []);
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
-      <div className="flex items-center justify-center gap-14 mb-20">
-        <div className="text-left team-text">
-          <h2 className="text-4xl font-bold leading-tight">
-            Let&apos;s start <br />
-            working <br/> more <br />
-            efficiently <br/> today!
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14 mb-12 md:mb-20">
+        <div className="text-center md:text-left team-text order-2 md:order-1">
+          <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
+            Let&apos;s start <br className="hidden sm:block" />
+            working <br className="hidden sm:block" /> more <br className="hidden sm:block" />
+            efficiently <br className="hidden sm:block" /> today!
           </h2>
         </div>
-        <div className="text-center team-image">
+        <div className="text-center team-image order-1 md:order-2 mb-6 md:mb-0">
           <img 
             src={heroImage}
             alt="HeroImage"
-            className="max-w-lg h-auto"
+            className="max-w-xs sm:max-w-lg h-auto mx-auto"
           />
         </div>
       </div>
 
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">Team</h2>
-        <p className="text-gray-600">Meet the people behind our magical product</p>
+      <div className="text-center mb-8 md:mb-12">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-3 md:mb-4">Team</h2>
+        <p className="text-gray-600 text-sm sm:text-base">Meet the people behind our magical product</p>
       </div>
 
-      <div className="grid grid-cols-4 gap-8">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
         {teamMembers.map((member, index) => (
           <div key={index} className="profile-card flex flex-col items-center">
             <img
               src={member.image}
               alt={member.name}
-              className="w-32 h-32 rounded-full object-cover mb-4"
+              className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full object-cover mb-3"
             />
-            <h3 className="font-semibold text-lg mb-1">{member.name}</h3>
-            <p className="text-gray-600 text-sm">{member.role}</p>
+            <h3 className="font-semibold text-sm sm:text-base md:text-lg mb-1 text-center">{member.name}</h3>
+            <p className="text-gray-600 text-xs sm:text-sm text-center">{member.role}</p>
           </div>
         ))}
       </div>
