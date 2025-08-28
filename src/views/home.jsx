@@ -37,8 +37,7 @@ const Home = () => {
         </div>
       </div>
       <div className="mobile-message">
-        <div className="warning-icon">⚠️</div>
-        This site is not available on mobile screens. Please visit us on a larger device.
+        <div className="warning-icon"></div>
       </div>
     </div>
   );
