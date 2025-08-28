@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './views/Home';
+import Home from './views/home';
 import Pricing from './views/Pricing';
 import AboutUs from './views/AboutUs'; 
 import Contact from './views/Contact';
@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
-    
+
   );
 };
 
