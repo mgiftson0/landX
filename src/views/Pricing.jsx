@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 const Pricing = () => {
   return (
     <div className="bg-gray-100">
-      <main className="mt-16">
+      <main className="mt-16, bg-gray-100">
         <Header />
         <PricingCard />
         <Features />
