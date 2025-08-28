@@ -1,4 +1,4 @@
-import aboutImage from '../assets/aboutImage.png'; 
+import AboutImage from '../assets/AboutImage.png'; 
 import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 
@@ -31,7 +31,7 @@ const About = () => {
           We offer revolutionary solutions <br /> to industry problems. Join the Landx <br/>  community and experience the benefits <br/>of company optimization today!
         </p>
       </div>
-      <img src={aboutImage} alt="About Us" className="w-2/3 md:w-1/2 mx-auto about-image" />
+      <img src={AboutImage} alt="About Us" className="w-2/3 md:w-1/2 mx-auto about-image" />
     </section>
   );
 };
