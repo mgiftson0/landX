@@ -37,7 +37,7 @@ const Home = () => {
         </div>
       </div>
       <div className="mobile-message">
-        <div className="warning-icon"></div>
+        {/* <div className="warning-icon"></div> */}
       </div>
     </div>
   );
